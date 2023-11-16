@@ -1,4 +1,4 @@
-# React Webshop App
+# TypeScript React Webshop App
 
 ## Requirements
 
@@ -13,18 +13,25 @@ After adding the desired filters, you have to click on the `Filter` button to up
 
 ## Installation and Start
 
-* clone the repo
-* npm install
-* npm start
+* git clone git@github.com:fozodavid/typescript_react_webshop.git
+* yarn install
+* yarn start
 
-## Possible Improvements
+## Todos
 
-* Proptypes
-* Write Tests
-* Setup ESLint
+* ~~Setup TypeScript~~
+* Make it work
+* Redo Folder Structure
+* Semantic HTML
+* Setup Tests Library
+* Custom Hooks
+* Actual API Calls
+* Styling
+
+### Bonus
+* Register Service Worker redo
 
 ## Misc
 
 `data/productGenSchema.json` is a schema to generate json at
 https://www.json-generator.com/
-

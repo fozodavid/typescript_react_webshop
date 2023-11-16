@@ -1,25 +1,29 @@
-function filterCategory(category, displayedCategory) {
+import { FilterConfig, Product } from './types'
+
+
+const filterCategory = (category: string, displayedCategory: string): boolean => {
   return category === displayedCategory;
 }
 
-function filterByAttribute(itemAttribute, displayedAttribute) {
+const filterByAttribute = (itemAttribute: string, displayedAttribute: string[]): boolean => {
   if (displayedAttribute.length === 0) {
     return true;
   }
   return displayedAttribute.includes(itemAttribute);
 }
 
-function stripCurrencySymbol(price) {
+const stripCurrencySymbol = (price: string): string => {
   return price.substring(1);
 }
 
-function sortByPrice(current, next) {
+const sortByPrice = (current: Product, next: Product): number => {
   const currentPrice = stripCurrencySymbol(current.price);
   const nextPrice = stripCurrencySymbol(next.price);
-  return currentPrice - nextPrice;
+  return parseInt(currentPrice) - parseInt(nextPrice);
 }
 
-export default function filterProducts(data, onDisplay) {
+
+export default function filterProducts(data: Product[], onDisplay: FilterConfig) {
   return data
     .filter(item => filterCategory(item.category, onDisplay.category))
     .filter(item => filterByAttribute(item.brand, onDisplay.brands))

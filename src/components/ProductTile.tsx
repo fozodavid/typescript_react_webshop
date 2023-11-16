@@ -1,7 +1,12 @@
 import React from "react";
 import "./ProductTile.css";
+import { Product } from '../types'
 
-function ProductTile(props) {
+type IProductTile = {
+  [K in keyof Product]: Product[K]
+}
+
+const ProductTile: React.FC<IProductTile> = (props) => {
   return (
     <article className="product col col-md-3">
       <img src={props.picture} alt="product" />
