@@ -26,9 +26,10 @@ const WebShop: React.FC<WebShopInterface> = ({ products }) => {
   }
 
   const categoryHandler = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const newValue = e.target.value
     setFilters(prev => ({
         ...prev,
-        category: e.target.value
+        category: newValue
     }))
   }
 

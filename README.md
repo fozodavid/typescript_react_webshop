@@ -25,7 +25,7 @@ After adding the desired filters, you have to click on the `Filter` button to up
 * Semantic HTML
 * Setup Tests Library
 * Custom Hooks
-* Actual API Calls
+* ActualAPI Calls
 * Styling
 
 ### Bonus
