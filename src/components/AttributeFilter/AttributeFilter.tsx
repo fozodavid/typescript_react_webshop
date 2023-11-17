@@ -15,7 +15,7 @@ const AttributeFilter: React.FC<ICheckBox> = ({ name, options, handler }) => {
       {options.map(option => {
         return (
           <div key={option} className="checkbox">
-            <input onChange={handler} name={name} type="checkbox" id={option} />
+            <input id={option} data-testid={option} onChange={handler} name={name} type="checkbox" />
             <label htmlFor={option} className="form-label">
               {option}
             </label>
