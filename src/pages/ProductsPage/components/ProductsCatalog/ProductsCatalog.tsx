@@ -1,6 +1,6 @@
 import React from "react";
 import { ProductTile } from "./ProductTile";
-import filterProducts from "utils";
+import { filterProducts } from "utils";
 import { FilterConfig, Product } from 'types'
 import "./ProductsCatalog.css";
 
