@@ -1,5 +1,5 @@
 import React, { ChangeEventHandler } from "react";
-import './CheckBox.css';
+import './AttributeFilter.css';
 
 
 interface ICheckBox {
@@ -8,8 +8,7 @@ interface ICheckBox {
   handler: ChangeEventHandler<HTMLInputElement>
 }
 
-const CheckBox: React.FC<ICheckBox> = ({ name, options, handler }) => {
-  // todo: is this a form group?
+const AttributeFilter: React.FC<ICheckBox> = ({ name, options, handler }) => {
   return (
     <div className="form-group">
       <h2>{name}</h2>
@@ -27,4 +26,4 @@ const CheckBox: React.FC<ICheckBox> = ({ name, options, handler }) => {
   );
 }
 
-export default CheckBox;
+export default AttributeFilter;

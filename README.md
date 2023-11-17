@@ -24,7 +24,7 @@ After adding the desired filters, you have to click on the `Filter` button to up
 * Redo Folder Structure
 * Semantic HTML
 * Setup Tests Library
-* Custom Hooks
+* ~~Custom Hooks~~
 * ActualAPI Calls
 * Styling
 

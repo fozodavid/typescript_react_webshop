@@ -27,8 +27,6 @@
   },
   "exclude": [
     "src/data/*"
-    "dist",
-    "build",
   ],
   "include": [
     "src",
