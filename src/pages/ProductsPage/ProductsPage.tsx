@@ -1,7 +1,7 @@
 import React from "react";
 import { ProductsCatalog, FilterSidebar } from "./components";
 import { Product } from 'types'
-import { useFilters } from "hooks/useFilters";
+import { useFilters } from "hooks";
 
 interface IWebShop {
   products: Product[]
