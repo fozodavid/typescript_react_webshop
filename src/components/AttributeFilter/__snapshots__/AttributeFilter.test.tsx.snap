@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders component: <h2>brands</h2> 1`] = `
+<h2>
+  brands
+</h2>
+`;
+
+exports[`renders component: <label class="form-label" for=ASUS>ASUS</label> 1`] = `
+<input
+  id="ASUS"
+  name="brands"
+  type="checkbox"
+/>
+`;
+
+exports[`renders component: <label class="form-label" for=DELL>DELL</label> 1`] = `
+<input
+  id="DELL"
+  name="brands"
+  type="checkbox"
+/>
+`;
+
+exports[`renders component: <label class="form-label" for=HP>HP</label> 1`] = `
+<input
+  id="HP"
+  name="brands"
+  type="checkbox"
+/>
+`;
+
+exports[`renders component: <label class="form-label" for=LENOVO>LENOVO</label> 1`] = `
+<input
+  id="LENOVO"
+  name="brands"
+  type="checkbox"
+/>
+`;
+
+exports[`renders component: <label class="form-label" for=MSI>MSI</label> 1`] = `
+<input
+  id="MSI"
+  name="brands"
+  type="checkbox"
+/>
+`;
