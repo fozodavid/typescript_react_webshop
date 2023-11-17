@@ -1,20 +1,19 @@
 import React, { ChangeEventHandler, EventHandler } from 'react';
 import CategoryFilter from './CategoryFilter';
-import AttributeFilter from './AttributeFilter';
-import { CATEGORIES, COLORS, BRANDS } from '../constants';
+import { AttributeFilter } from 'components/AttributeFilter';
+import { COLORS, BRANDS } from 'consts';
 
-interface IFilters {
+interface IFilterSidebar {
   categoryHandler: ChangeEventHandler<HTMLSelectElement>
   checkboxHandler: ChangeEventHandler<HTMLInputElement>
   updateDisplay: () => void
 }
 
-const Filters: React.FC<IFilters> = (props) => {
-
+const FilterSidebar: React.FC<IFilterSidebar> = (props) => {
   return (
     <aside className='col col-md-3'>
       <form>
-        <CategoryFilter categories={CATEGORIES} handler={props.categoryHandler} />
+        <CategoryFilter handler={props.categoryHandler} />
         <AttributeFilter name='brands' options={BRANDS} handler={props.checkboxHandler} />
         <AttributeFilter name='colors' options={COLORS} handler={props.checkboxHandler} />
         <button type='button' className='btn' onClick={props.updateDisplay}>
@@ -25,4 +24,4 @@ const Filters: React.FC<IFilters> = (props) => {
   )
 }
 
-export default Filters;
+export default FilterSidebar;

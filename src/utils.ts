@@ -2,14 +2,17 @@ import { FilterConfig, Product } from './types'
 
 
 const filterCategory = (category: string, displayedCategory: string): boolean => {
-  return category === displayedCategory;
+  return category.toLowerCase() === displayedCategory.toLowerCase()
 }
 
-const filterByAttribute = (itemAttribute: string, displayedAttribute: string[]): boolean => {
-  if (displayedAttribute.length === 0) {
+const filterByAttribute = (itemAttribute: string, selectedAttributes: string[]): boolean => {
+  selectedAttributes = selectedAttributes.map(attr => attr.toUpperCase())
+  itemAttribute = itemAttribute.toUpperCase()
+
+  if (selectedAttributes.length === 0) {
     return true;
   }
-  return displayedAttribute.includes(itemAttribute);
+  return selectedAttributes.includes(itemAttribute);
 }
 
 const stripCurrencySymbol = (price: string): string => {
@@ -19,7 +22,7 @@ const stripCurrencySymbol = (price: string): string => {
 const sortByPrice = (current: Product, next: Product): number => {
   const currentPrice = stripCurrencySymbol(current.price);
   const nextPrice = stripCurrencySymbol(next.price);
-  return parseInt(currentPrice) - parseInt(nextPrice);
+  return parseFloat(currentPrice) - parseFloat(nextPrice);
 }
 
 

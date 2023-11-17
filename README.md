@@ -20,8 +20,8 @@ After adding the desired filters, you have to click on the `Filter` button to up
 ## Todos
 
 * ~~Setup TypeScript~~
-* Make it work
-* Redo Folder Structure
+* ~~Make it work~~
+* ~~Redo Folder Structure~~
 * Semantic HTML
 * Setup Tests Library
 * ~~Custom Hooks~~

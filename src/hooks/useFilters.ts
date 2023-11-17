@@ -1,6 +1,6 @@
 import React from "react"
-import { FilterConfig, FilterKeyList } from '../types'
-import { CATEGORIES } from "../constants";
+import { FilterConfig, FilterKeyList } from 'types'
+import { CATEGORIES } from "consts";
 
 
 const initialState: FilterConfig = {
