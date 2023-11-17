@@ -1,8 +1,10 @@
+export type Price = `£${number}`
+
 export type Product = {
   "_id": string
   "index": number
   "guid": string
-  "price": string
+  "price": Price
   "picture": string
   "color": string
   "category": string
@@ -15,10 +17,10 @@ export type Product = {
   "tags": string[]
 }
 
-export type FilterKeyList = 'brands' | 'colors'
-
 export type FilterConfig = {
   category: string
   brands: string[]
   colors: string[]
 }
+
+export type FilterKeyList = Exclude<keyof FilterConfig, 'category'>

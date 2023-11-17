@@ -21,10 +21,11 @@ After adding the desired filters, you have to click on the `Filter` button to up
 
 * ~~Setup TypeScript~~
 * ~~Make it work~~
+* ~~Custom Hooks~~
 * ~~Redo Folder Structure~~
 * Semantic HTML
 * Setup Tests Library
-* ~~Custom Hooks~~
+* More Advanced Types
 * ActualAPI Calls
 * Styling
 

@@ -1,6 +1,7 @@
 import React from "react";
 import products from "./data/products.json";
 import { ProductsPage } from "pages";
+import { Product } from "types";
 import "./App.css";
 
 const App: React.FC = () => {
@@ -9,7 +10,7 @@ const App: React.FC = () => {
       <header>
         <h1>React Webshop App</h1>
       </header>
-      <ProductsPage products={products} />
+      <ProductsPage products={products as Product[]} />
     </div>
   );
 }
