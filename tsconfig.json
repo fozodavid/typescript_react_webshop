@@ -1,29 +1,21 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
+    "types": ["node", "jest"],
     "allowJs": true,
-    "outDir": "public",
-    "rootDir": ".",
-    "strict": true,
-    "jsx": "react-jsx",
+    "skipLibCheck": true,
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "strict": true,
     "forceConsistentCasingInFileNames": true, /* Disallow inconsistently-cased references to the same file. */
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "baseUrl": "./src",
+    "jsx": "react-jsx",
     "declaration": true, /* Generates corresponding '.d.ts' file. */
     "strictNullChecks": true,
-    "resolveJsonModule": true,
     "sourceMap": true,
-    "baseUrl": "./src",
-    "paths": {
-      "*": [
-        "*",
-        "src/*",
-        "src/setup/*",
-        "src/logic/*",
-        "src/models/*",
-        "config/*"
-      ]
-    },
   },
   "exclude": [
     "src/data/*"
