@@ -49,6 +49,7 @@ export const useFilters = () => {
   };
 
   return {
+    filters,
     checkboxHandler,
     categoryHandler,
     updateDisplay,
