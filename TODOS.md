@@ -5,13 +5,22 @@
 * ~~Setup TypeScript~~
 * ~~Make it work~~
 * ~~Custom Hooks~~
-* ~~Redo Folder Structure~~
-* Semantic HTML
-* ~~Setup Tests Library~~
-* Full Test Coverage
 * ~~More Advanced Types~~
+* ~~Redo Folder Structure~~
+* ~~Setup Tests Library~~
+* Integration Tests
+* Cypress Setup
+* E2E Tests
+
+## Should Do
+
+* Semantic HTML Review
+
+## Could Do
+
 * ActualAPI Calls
 * Styling
 
-## Bonus
-* Register Service Worker redo
+## Nice to Have
+
+* Register Service Worker TypeScript Integration
