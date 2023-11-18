@@ -4,22 +4,22 @@
 
 This sample application demonstrates best practices in React scalable component organization and testing.
 
-The `index.ts` files in each folder makes component imports clean and easy to refactor. Each React element is a self-contained unit bundled together with its children, tests and styling.
+The `index.ts` files in each folder make component imports clean and easy to refactor. Each React element is a self-contained unit bundled with its children, tests, and styling.
 
-Instead of importing from parent or grandparent, top level modules are aliased into simple their folder names.
+Instead of importing from parent or grandparent, top-level modules are aliased into their folder names.
 
 Instead of:
 ```
 import UseFilters from '../../../hooks/UseFilters'
 ```
-it uses:
+It uses:
 ```
 import { UseFilters } from 'hooks'
 ```
 
 ## Behaviour
 
-As an overly simplified webshop interface, there are a list of randomly generated products displayed to the user. You can interract with the filters to separate out the desired products. Requires clicking the `Filter` button to activate.
+As an overly simplified webshop interface, a list of randomly generated products is displayed to the user. You can interact with the filters to separate the desired products. Requires clicking the `Filter` button to activate.
 
 ## Installation
 
