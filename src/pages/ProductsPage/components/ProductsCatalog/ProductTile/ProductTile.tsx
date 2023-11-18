@@ -3,12 +3,12 @@ import "./ProductTile.css";
 import { Product } from 'types'
 
 type IProductTile = {
-  [K in keyof Product]: Product[K]
+  [K in keyof Product]?: Product[K]
 }
 
 const ProductTile: React.FC<IProductTile> = (props) => {
   return (
-    <article className="product col col-md-3">
+    <article data-testid="tile" className="product col col-md-3">
       <img src={props.picture} alt="product" />
       <p>
         {props.name}
