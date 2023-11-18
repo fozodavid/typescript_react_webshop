@@ -1,36 +1,22 @@
 # TypeScript React Webshop App
 
-## Requirements
+## Overview
 
-Using a CreateReactApp as a starting point, build a page that lists a set of products (ex: fruits, vegetables, drinks, whatever etc.), from a json file.
+This sample application demonstrates best practices in React scalable component organization and testing.
 
-Having a product type filter on the left, by selecting a type, filter the list to show only the selected type of products.
+The `index.ts` files in each folder makes component imports clean and easy to refactor. Each React element is a self-contained unit bundled together with its children, tests and styling.
 
 ## Behaviour
 
-After adding the desired filters, you have to click on the `Filter` button to update.
+As an overly simplified webshop interface, there are a list of randomly generated products displayed to the user. You can interract with the filters to separate out the desired products. Requires clicking the `Filter` button to activate.
 
 ## Installation and Start
 
-* git clone git@github.com:fozodavid/typescript_react_webshop.git
-* yarn install
-* yarn start
-
-## Todos
-
-* ~~Setup TypeScript~~
-* ~~Make it work~~
-* ~~Custom Hooks~~
-* ~~Redo Folder Structure~~
-* Semantic HTML
-* ~~Setup Tests Library~~
-* Full Test Coverage
-* ~~More Advanced Types~~
-* ActualAPI Calls
-* Styling
-
-### Bonus
-* Register Service Worker redo
+```
+git clone git@github.com:fozodavid/typescript_react_webshop.git
+yarn install
+yarn start
+```
 
 ## Misc
 
