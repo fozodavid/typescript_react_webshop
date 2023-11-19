@@ -8,7 +8,7 @@
 * ~~More Advanced Types~~
 * ~~Redo Folder Structure~~
 * ~~Setup Tests Library~~
-* Integration Tests
+* ~~Integration Tests~~
 * Cypress Setup
 * E2E Tests
 
