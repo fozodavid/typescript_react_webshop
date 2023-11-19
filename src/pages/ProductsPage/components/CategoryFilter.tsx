@@ -9,7 +9,7 @@ interface ICategoryFilter {
 const CategoryFilter: React.FC<ICategoryFilter> = ({ handler }) => {
   return (
     <div className="form-group">
-      <select className="form-control" name="categories" onChange={e => handler(e)}>
+      <select data-testid="category-filter" className="form-control" name="categories" onChange={e => handler(e)}>
         {CATEGORIES.map(category =>
           <option key={category} value={category}>{category}</option>
         )}

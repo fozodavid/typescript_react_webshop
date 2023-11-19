@@ -5,18 +5,21 @@ import { mockData } from 'mocks';
 
 
 describe('ProductsPage', () => {
+
   it('Filter applied', () => {
     const screen = render(<ProductsPage products={mockData} />);
     fireEvent.click(screen.getByText(BRANDS[0]))
     fireEvent.click(screen.getByText(COLORS[0]))
     fireEvent.click(screen.getByText('Filter'))
-    expect(screen.queryAllByTestId('tile')).toHaveLength(1)
+    expect(screen.getAllByTestId('product-tile')).toHaveLength(1)
   })
 
-  it.skip('Filter applied to laptops', () => {
-    // WIP
-    fireEvent.select(screen.getByText('Mobile'))
-    fireEvent.click(screen.getByText(BRANDS[1]))
-    fireEvent.click(screen.getByText(COLORS[1]))
+  it('Filter applied to laptops', () => {
+    const screen = render(<ProductsPage products={mockData} />);
+    fireEvent.change(screen.getByTestId('category-filter'), { target: { value: 'LAPTOP' } })
+    fireEvent.click(screen.getByText(BRANDS[0]))
+    fireEvent.click(screen.getByText(COLORS[0]))
+    fireEvent.click(screen.getByText('Filter'))
+    expect(screen.queryAllByTestId('product-tile')).toHaveLength(2)
   })
 })

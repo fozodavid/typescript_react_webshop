@@ -8,7 +8,7 @@ type IProductTile = {
 
 const ProductTile: React.FC<IProductTile> = (props) => {
   return (
-    <article data-testid="tile" className="product col col-md-3">
+    <article data-testid="product-tile" className="product col col-md-3">
       <img src={props.picture} alt="product" />
       <p>
         {props.name}
