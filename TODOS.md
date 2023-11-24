@@ -9,6 +9,9 @@
 * ~~Redo Folder Structure~~
 * ~~Setup Tests Library~~
 * ~~Integration Tests~~
+* Documentation Update
+    * Testing Philosophy
+    * Article References
 * Cypress Setup
 * E2E Tests
 
